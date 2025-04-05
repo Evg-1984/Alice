@@ -1,5 +1,5 @@
 # импортируем библиотеки
-from flask import Flask, request
+from flask import Flask, request, jsonify
 import logging
 import json
 import random
@@ -12,12 +12,12 @@ app = Flask(__name__)
 logging.basicConfig(level=logging.INFO)
 
 cities = {
-    "москва": ['1540737/daa6e420d33102bf6947',
-               '213044/7df73ae4cc715175059e'],
-    "нью-йорк": ['1652229/728d5c86707054d4745f',
-                 '1030494/aca7ed7acefde2606bdc'],
-    "париж": ["1652229/f77136c2364eb90a3ea8",
-              '3450494/aca7ed7acefde22341bdc']
+    "москва": ['1652229/84c2f079309de24f1f91',
+               '997614/62145fd27025d8cd9512'],
+    "нью-йорк": ['1521359/b5767126338d24efc30d',
+                 '1533899/e0544211f5de3f81a216'],
+    "париж": ["1533899/d0a43525d7c2bc33d6c6",
+              '1533899/857e3c0d0736970a76b1']
 }
 
 sessionStorage = {}
